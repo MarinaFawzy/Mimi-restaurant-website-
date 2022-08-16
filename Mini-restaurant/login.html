@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+    <html>
+        <head>
+            <title>Food Website Login</title>
+
+        </head>
+
+        <style>
+
+            body
+            {
+            background-image:url(background_signup.jpg);
+            background-size:cover;
+            background-size:cover;
+            font-family:poppins;
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            }
+            .login
+            {
+            width:400px;
+            height:420px;
+            top:50%;
+            left:38%;
+            padding:30px 30px;
+            position:absolute;
+            transform:translate(35%,-50%);
+            box-sizing:border-box;
+            box-shadow:8px 8px 50px #001;
+            }
+            h1
+            {
+            font-weight:bold;
+            font-size:40px;
+            color:#D43102;
+            text-align:center;
+            font-size:50px;
+
+            }
+
+            .login input
+            {
+            width:340px;
+            margin-bottom:20px;
+            }
+
+            .login input[type=text], .login input[type=password]
+            {
+            text-align:center;
+            border:none;
+            border-bottom:1px solid blue;
+            background:transparent;
+            outline:black;
+            height:30px;
+            font-size:15px;
+            opacity:1;
+            color:#000;
+            }
+            .login input[type=submit]
+            {
+                border:none;
+                outline:none;
+                height:25px;
+                background:white;
+                font-size:14px;
+                font-weight:bold;
+            }
+            .login input[type=submit]:hover
+            {
+                cursor: pointer;
+                background :#1c8adb;
+            }
+           a
+           {
+            color:#AE00FF;
+            font-size:20px;
+
+            }
+            .login a:hover{
+                color:#FF0000;
+                opacity:2;
+            }
+            .bottomtext
+            {
+                color:#fff;
+            }
+            .bottomtext input
+            {
+                width:10%;
+            }
+            .bottomtext input
+            {
+                float:right;
+            }
+
+            label
+            {color:white;}
+            .bottomtext
+            {color:#002EFF;}
+      </style>
+
+         <script type="text/javascript"  >
+            function vali_date_Form()
+            {
+              var name = document.getElementById("Name").value;
+              var pass = document.getElementById("Password").value;
+              if (name == "")
+              {alert("User Name must be filled out");}
+              else if (pass=="")
+              {alert("password is empty");}
+              else
+              {
+                if (name == "admin" && pass=="admin")
+                 {
+                 alert("Hello " + name);
+                 document.getElementById("form").action = "admins.html";
+                 }
+                 else
+                 {
+                    alert("Sorry,This account does not exist");
+                 }
+
+              }
+            }
+
+         </script>
+    <body>
+    <div class="login">
+    <h1>sign in</h1>
+    <form id="form">
+
+        <input type="text" id="Name" placeholder="user name"></label>
+    <br>
+
+        <input type="password" id="Password" placeholder="password"></label>
+        <br>
+        <input type="submit" value="login" onclick=vali_date_Form()>
+    </form>
+    <div class="bottomtext">
+        <input type="checkbox" name="remember" checked="checked"> Remember me
+        <br>
+    </div>
+    <a href="signup.html">Sign Up</a>
+    </div>
+    </body>
+    </html>

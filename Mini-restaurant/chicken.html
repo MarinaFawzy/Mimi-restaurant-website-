@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>chicken menu</title>
+        <meta charset="utf-8"/>
+        <style>
+
+
+        /*Start Header*/
+
+        .header .slider
+        {
+            background-image: url("img-09\ -\ Copy.jpg");
+            background-size: cover;
+            height: 480px;
+        }
+
+        .header .navbar
+        {
+            background-size: cover;
+            background-color: #fff;
+            color: #fff;
+            overflow: hidden;
+            text-transform: uppercase;
+            height: 100px;
+        }
+        .header .navbar ul
+        {
+            list-style: none;
+            padding-left: 0;
+            overflow: hidden;
+            float: right;
+        }
+        .header .navbar ul li
+        {
+            float: left;
+            padding: 15px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .header .navbar ul li a
+        {
+            font-weight: bold;
+            font-size: larger;
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 14px;
+            border-radius: 5px;
+        }
+        .header .navbar ul li.active a,
+        .header .navbar ul li a:hover
+        {
+            background-color: black;
+            color:#fff
+        }
+
+        .header .navbar .image
+        {
+            float: left;
+            padding: 10px;
+        }
+
+        /*End Header*/
+
+
+        /*Start Footer*/
+        .footer
+        {
+            background-image: url("footer3.jpg");
+            background-size: cover;
+            height: 300px;
+            color: #fff;
+            text-align: center;
+        }
+
+        /*End Footer*/
+
+        /*Start Finale*/
+        .finale
+        {
+            background-color: #0b0c0e;
+            height: 80px;
+            color: #fff;
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        /*End Finale*/
+
+
+           h1{
+                text-align: center;
+                text-shadow: 2px 2px #ff004e;
+
+
+            }
+            .title{
+
+               color: #ffffff;
+                background-color: #D8D6BA;
+                background-size: auto;
+                background-position: center;
+                box-shadow: 8px 8px 50px #001;
+                border: groove;
+                border-color: #ff0000;
+                width: 30%;
+                text-align: center;
+                margin:0 auto;
+
+
+
+            }
+            button{
+                color: #ffffff;
+                background: #ff0000;
+                width: 100%;
+                border: groove;
+                margin-bottom: 20px;
+                margin-top: -25px;
+                text-align: center;
+
+            }
+
+            .first{
+              box-shadow: 8px 8px 50px #001;
+                border: groove;
+                border-color: #ff0000;
+                outline:black;
+                display:flex;
+                text-align:center;
+            }
+
+            body{
+
+                background: url(background.jpg) fixed no-repeat;
+                background-size: 100%;
+
+            }
+            .second{
+                box-shadow: 8px 8px 50px #001;
+                border: groove;
+                border-color: #ff0000;
+                display:flex;
+                text-align:center;
+            }
+            .third{
+                 box-shadow: 8px 8px 50px #001;
+                border: groove;
+                border-color: #ff0000;
+                display:flex;
+                text-align:center;
+            }
+
+
+            .fourth{
+                box-shadow: 8px 8px 50px #001;
+                border: groove;
+                border-color: #ff0000;
+                display:flex;
+                text-align:center;
+            }
+
+        </style>
+
+         <script>
+            function order()
+            {
+                    alert("you have ordered successfully");
+                }
+            </script>
+
+    </head>
+    <body>
+
+
+        <!--Start Header-->
+        <div class="header">
+            <div class="slider">
+            </div>
+                <div class="navbar">
+                    <div class="container">
+                        <div class="image">
+                            <img src="logo.png" alt="Failed Loading">
+                        </div>
+
+                        <ul>
+                            <li class="active"> <a href="home.html">Home</a></li>
+                            <li > <a href="about.html">About</a></li>
+                            <li> <a href="places.html">Places</a></li>
+                            <li> <a href="login.html">Log Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+       <br>
+        <!--End Header-->
+
+
+         <div class="title"><h1>our chicken list</h1></div>
+            <br/>
+            <div class="first">
+            <div class="delicious-whole-grilled-chicken">
+                <img src="delicious-whole-grilled-chicken.jpg" alt="delicious-whole-grilled-chicken" width="400px" height="400px"/>
+                     <br/>
+            </div>
+            <div class="first_content">
+                    <h1 style="text-shadow:1px 2px #ffffff">whole-grilled-chicken</h1>
+                    <h2>delicious-whole-grilled-chicken-with-salad</h2>
+                    <h4 id="c1"></h3>
+                </div>
+            </div>
+            <br><br>
+                         <button onclick=order()><h2>order now</h2></button>
+
+            <div class="second">
+            <div class="grilled-barbcue-chicken">
+                <img src="grilled-barbcue-chicken.jpg" alt="grilled-barbcue-chicken" width="400px" height="400"/>
+                <br/>
+            </div>
+            <div class="first_content">
+                    <h1 style="text-shadow:1px 2px #ffffff">grilled-chicken</h1>
+                    <h2>grilled-barbcue-chicken-with-tomatoe-sauce</h2>
+                    <h4 id="c2"></h3>
+                </div>
+            </div>
+            <br><br>
+                <button onclick=order()><h2>order now</h2></button>
+
+            <div class="third">
+            <div class="crispy-fried-chicken">
+                    <img src="crispy-fried-chicken.jpg" alt="crispy-fried-chicken" width="400px" height="400px"/>
+                    <br/>
+            </div>
+            <div class="first_content">
+                    <h1 style="text-shadow:1px 2px #ffffff">crispy-fried-chicken</h1>
+                    <h2>4 pieces of crispy-fried-chicken-come with salad</h2>
+                    <h4 id="c3"></h3>
+                </div>
+            </div>
+            <br><br>
+                    <button onclick=order()><h2>order now</h2></button>
+
+
+
+            </div>
+            <br/>
+            <div class="fourth">
+                <div class="spicy-fried-chicken-wings">
+            <img src="spicy-fried-chicken-wings.jpg" alt="spicy-fried-chicken-wings" width="400px" height="400px"/>
+            <br/>
+                </div>
+                <div class="first_content">
+                    <h1 style="text-shadow:1px 2px #ffffff">spicy-fried-chicken-wings</h1>
+                    <h2>alot of chicken wanges come spicy and fried</h2>
+                    <h4 id="c4"></h3>
+                </div>
+            </div>
+            <br><br>
+             <button onclick=order()><h2>order now</h2></button>
+
+
+        <!--Start Footer-->
+        <br>
+        <div class="footer">
+        </div>
+        <!--End Footer-->
+
+        <!--Start Finale-->
+        <div class="finale">
+            <div class="container">
+                <br>
+                 Copyright &copy; FCIS (2019 - 2023)
+            </div>
+
+        </div>
+        <!--End Finale-->
+        <script type="text/javascript">
+              document.getElementById("c1").innerHTML=localStorage.getItem("w1");
+              document.getElementById("c2").innerHTML=localStorage.getItem("w2");
+              document.getElementById("c3").innerHTML=localStorage.getItem("w3");
+              document.getElementById("c4").innerHTML=localStorage.getItem("w4");
+            </script>
+
+
+    </body>
+    </html>

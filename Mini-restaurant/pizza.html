@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>pizza menu</title>
+            <meta charset="utf-8"/>
+            <style>
+
+            /*Start Header*/
+            .header .slider
+            {
+                background-image: url("img-09\ -\ Copy.jpg");
+                background-size: cover;
+                height: 480px;
+            }
+
+            .header .navbar
+            {
+                background-size: cover;
+                background-color: #fff;
+                color: #fff;
+                overflow: hidden;
+                text-transform: uppercase;
+                height: 100px;
+            }
+            .header .navbar ul
+            {
+                list-style: none;
+                padding-left: 0;
+                overflow: hidden;
+                float: right;
+            }
+            .header .navbar ul li
+            {
+                float: left;
+                padding: 15px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            .header .navbar ul li a
+            {
+                font-weight: bold;
+                font-size: larger;
+                display: block;
+                color: black;
+                text-decoration: none;
+                padding: 14px;
+                border-radius: 5px;
+            }
+            .header .navbar ul li.active a,
+            .header .navbar ul li a:hover
+            {
+                background-color: black;
+                color:#fff
+            }
+
+            .header .navbar .image
+            {
+                float: left;
+                padding: 10px;
+            }
+
+            /*End Header*/
+
+
+            /*Start Footer*/
+            .footer
+            {
+                background-image: url("footer3.jpg");
+                background-size: cover;
+                height: 300px;
+                color: #fff;
+                text-align: center;
+            }
+
+            /*End Footer*/
+
+            /*Start Finale*/
+            .finale
+            {
+                background-color: #0b0c0e;
+                height: 80px;
+                color: #fff;
+                text-align: center;
+                font-size: larger;
+                font-weight: bold;
+            }
+
+            /*End Finale*/
+
+
+            h1
+            {
+                text-align: center;
+                text-shadow: 2px 2px #ff004e;
+
+
+            }
+
+            .title
+            {
+                color: #ffffff;
+                background-color: #D8D6BA;
+                background-size: auto;
+                background-position: center;
+                box-shadow: 8px 8px 50px #001;
+                border: groove;
+                border-color: #ff0000;
+                width: 30%;
+                text-align: center;
+                margin:0 auto;
+            }
+            button
+            {
+                color: #ffffff;
+                background: #ff0000;
+                width: 100%;
+                border: groove;
+                margin-bottom: 20px;
+                margin-top: -20px;
+                text-align: center;
+
+
+            }
+
+            body{
+
+                background: url(background.jpg) fixed no-repeat;
+                background-size: 100%;
+
+            }
+           .first
+           {
+
+
+             box-shadow: 8px 8px 50px #001;
+                border: groove;
+                border-color: #ff0000;
+                outline:black;
+                display:flex;
+                text-align:center;
+           }
+           .second
+           {
+
+             box-shadow: 8px 8px 50px #001;
+                border: groove;
+                border-color: #ff0000;
+                display:flex;
+                text-align:center;
+           }
+           .third
+           {
+
+                box-shadow: 8px 8px 50px #001;
+                border: groove;
+                border-color: #ff0000;
+                display:flex;
+                text-align:center;
+           }
+           .fourth
+           {
+                box-shadow: 8px 8px 50px #001;
+                border: groove;
+                border-color: #ff0000;
+                display:flex;
+                text-align:center;
+           }
+
+            </style>
+             <script>
+                function order(){
+                    alert("you have ordered successfully");
+                }
+            </script>
+        </head>
+        <body>
+
+            <!--Start Header-->
+        <div class="header">
+            <div class="slider">
+            </div>
+                <div class="navbar">
+                    <div class="container">
+                        <div class="image">
+                            <img src="logo.png" alt="Failed Loading">
+                        </div>
+
+                        <ul>
+                            <li class="active"> <a href="home.html">Home</a></li>
+                            <li > <a href="about.html">About</a></li>
+                            <li> <a href="#places">Places</a></li>
+                            <li> <a href="login.html">Log Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+       <br>
+        <!--End Header-->
+
+
+            <div class="title"><h1> our pizza list </h1></div>
+
+            <br/>
+            <div class="first">
+                <div class="image">
+            <img src="delicious-fresh-pizza.jpg" alt="delicious-fresh-pizza" width="400px" height="400px"/>
+                </div>
+                <div class="first_content">
+                    <h1 style="text-shadow:1px 2px #ffffff">peproonii pizza</h1>
+                    <h2>tomato sauce, Parmesan-cheese-and-oregano-with-mozzarella-cheese</h2>
+                    <h3 id="z1"></h3>
+                </div>
+            </div>
+<br/><br>
+<button onclick="order()"><h1>order now</h1></button>
+<div class="second">
+    <div class="seconeicon">
+            <img src="mixed-pizza-with-various-ingredients.jpg" alt="mixed-pizza-with-various-ingredients" width="400px" height="400"/>
+    </div>
+    <div class="secondpragraph">
+                    <h1 style="text-shadow:1px 2px #ffffff">salami pizza</h1>
+                    <h2>mixed-pizza-with-various-ingredients</h2>
+                    <h3 id="z2"></h3>
+                </div>
+</div>
+</br><br>
+<button onclick="order()"><h1>order now</h1></button>
+<div class="third">
+    <div class="thirdicon">
+            <img src="pizza-with-ham-mushrooms-olives.jpg" alt="pizza-with-ham-mushrooms-olives" width="400px" height="400px"/>
+    </div>
+    <div class="thirdpragraph">
+                    <h1 style="text-shadow:1px 2px #ffffff">beef pizza</h1>
+                    <h2>pizza-with-tomatoes-cheese-beef-and-olives</h2>
+                    <h3 id="z3"></h3>
+                </div>
+                </div>
+
+</br><br>
+<button onclick=order()><h1>order now</h1></button>
+<div class="fourth">
+    <div class="fourthicon">
+            <img src="pizza-with-tomatoes-salami-and-olives.jpg" alt="pizza-with-tomatoes-salami-and-olives" width="400px" height="400px"/>
+    </div>
+    <div class="fourthpragraph">
+                    <h1 style="text-shadow:1px 2px #ffffff">cheese pizza</h1>
+                    <h2>pizza-with-tomatoes-cheese-salami-and-olives</h2>
+                    <h3 id="z4"></h3>
+                </div>
+</div>
+<br/><br>
+        <button onclick=order()><h1>order now</h1></button>
+
+             <!--Start Footer-->
+        <br>
+        <div class="footer">
+        </div>
+        <!--End Footer-->
+
+        <!--Start Finale-->
+        <div class="finale">
+            <div class="container">
+                <br>
+                 Copyright &copy; FCIS (2019 - 2023)
+            </div>
+
+        </div>
+        <!--End Finale-->
+<script type="text/javascript">
+      document.getElementById("z1").innerHTML=localStorage.getItem("p1");
+      document.getElementById("z2").innerHTML=localStorage.getItem("p2");
+      document.getElementById("z3").innerHTML=localStorage.getItem("p3");
+      document.getElementById("z4").innerHTML=localStorage.getItem("p4");
+    </script>
+        </body>
+
+
+    </html>

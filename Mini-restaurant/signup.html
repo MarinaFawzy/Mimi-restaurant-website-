@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Food Website Sign UP</title>
+    <!--    <link rel="stylesheet" href="style.css"> -->
+        
+        <style>
+          body,html{height:100%;}
+            
+            body
+            {
+            color:#002EFF;
+            background-image:url(background_signup.jpg);
+            background-size:cover ;
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+            }
+            
+            .sign_up
+            {
+            position:absolute;
+            top:8%;left:50%;
+            box-sizing:border-box;
+            font-weight:bold;
+            box-shadow:8px 8px 50px #001;
+            padding: 30px 40px;
+            }
+            
+            h1
+            {
+            padding:0 0 10px;
+            text-align:center;
+            color:#D43102;
+            border-bottom: 1px solid blue;
+            }
+            
+            .sign_up input[type="text"],input[type="password"]
+            {
+                text-align:center;
+            border: none;
+            border-radius: 10px;
+            border-bottom: 1px solid #1409E8;
+            width: 90%;
+            margin: 10px;
+            background: transparent;
+            outline: none;
+            height: 25px;
+            color: #000;
+            }
+            
+            .sign_up input[type="reset"],input[type="submit"]
+            {
+            width: 49%;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 5px;
+            }
+            
+            .sign_up input[type="reset"]:hover,input[type="submit"]:hover
+            {
+            cursor: pointer;
+            background :#1c8adb;
+            }
+            
+            .sign_up input[type="date"]
+            {
+            border-radius: 4px;
+            }
+            
+            span
+            {
+            border-bottom:1px solid #0130AF;
+            }
+            
+        </style>
+            
+        <script type="text/javascript">
+           
+            function vali_date_Form()
+            {
+                var name = document.getElementById("Name").value;
+                var email = document.getElementById("Email").value;
+                var number = document.getElementById("Number").value;
+                var pass = document.getElementById("Password").value;
+                var confirmpass = document.getElementById("Confirm_Password").value;
+                if (name == "")
+                {alert("Name must be filled out");}
+                else if (email=="")
+                {alert("Email is empty");}
+                else if (number=="")
+                {alert("Number is empty");}
+                else if (pass=="")
+                {alert("Password is empty");}
+                else if (confirmpass=="")
+                {alert("Please,confirm your password");}
+                else
+                {
+                    if (confirmpass != pass)
+                    {alert("Please,check your password again");}
+                    else
+                    {
+                    alert("Hello " + name);
+                    document.getElementById("form").action = "home.html";
+                    }
+                }
+            }
+            
+        </script>
+        
+    </head>
+    <body>
+       
+    <form id="form">
+        <div class="sign_up">
+          <h1>Sign Up</h1>
+          <div class="data">
+             <input type="text" id="Name" placeholder="Name" ><br>
+             <input type="text" id="Email"  placeholder="Email" ><br>
+             <input type="text"  id="Number" placeholder="Number" ><br>
+             <input type="password"  id="Password" placeholder="Password"><br>
+             <input type="password"  id="Confirm_Password" placeholder="Confirm Password"><br>
+            <span> Gender: </span><br>
+            Male:<input type="radio" name="gender">
+            Female: <input type="radio" name="gender"><br>
+            Date of birth:<input type="date"  name="birthday"><br>
+          </div>
+          <div class="buttom">
+            <input type="submit" id="submitt" value="Submit" onclick=vali_date_Form()>
+            <input type="reset" value="Reset" onclick="">
+          </div>
+        </div>
+    </form>
+  
+    </body>
+
+</html>

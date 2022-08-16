@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>admin</title>
+      <style>
+      /*To make sure that the image covers the whole screen, you must also apply
+       height: 100% to both <html> and <body>:*/
+            body, html {
+          height: 100%;
+       }
+
+        body {
+
+          /* The image used */
+          background-image: url('yoyo.JPG');
+
+          /* Full height */
+          height: 100%;
+          background-attachment: fixed;
+          /* Center and scale the image nicely */
+          background-position:center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .change{
+          width:410px;
+          height: 460px;
+          box-shadow: 0 0 50px 0 ;
+          margin: auto ;
+          text-align: center;
+        }
+        .change h1{
+          color: blue;
+          padding-top: 20px;
+          margin-bottom: 25px;
+        }
+        .input_box{
+          margin-bottom: 20px;
+          border-radius: 20px;
+          padding: 10px;
+          box-shadow: 0 0 3px 0 ;
+          width:90%;
+          outline: none;
+        }
+        .button{
+          color: #fff;
+          width: 30%;
+          padding: 10px;
+          border-radius: 20px;
+          outline: none;
+          margin-bottom:10px;
+          margin-top: 10px;
+          font-size: 14px;
+          cursor: pointer;
+          background-color: #1c8adb;
+        }
+
+      </style>
+      <script type="text/javascript">
+      function changepizza(){
+      	var text1=document.getElementById("txt1").value ;
+        localStorage.setItem("p1",text1);
+        var text2=document.getElementById("txt2").value ;
+        localStorage.setItem("p2",text2);
+        var text3=document.getElementById("txt3").value ;
+        localStorage.setItem("p3",text3);
+        var text4=document.getElementById("txt4").value ;
+        localStorage.setItem("p4",text4);
+      }
+      function changesandwich(){
+      	var text5=document.getElementById("txt5").value ;
+        localStorage.setItem("b1",text5);
+        var text6=document.getElementById("txt6").value ;
+        localStorage.setItem("b2",text6);
+        var text7=document.getElementById("txt7").value ;
+        localStorage.setItem("b3",text7);
+        var text8=document.getElementById("txt8").value ;
+        localStorage.setItem("b4",text8);
+      }
+      function changechicken(){
+      	var text9=document.getElementById("txt9").value ;
+        localStorage.setItem("w1",text9);
+        var text10=document.getElementById("txt10").value ;
+        localStorage.setItem("w2",text10);
+        var text11=document.getElementById("txt11").value ;
+        localStorage.setItem("w3",text11);
+        var text12=document.getElementById("txt12").value ;
+        localStorage.setItem("w4",text12);
+      }
+      function changedessert(){
+      	var text13=document.getElementById("txt13").value ;
+        localStorage.setItem("d1",text13);
+        var text14=document.getElementById("txt14").value ;
+        localStorage.setItem("d2",text14);
+        var text15=document.getElementById("txt15").value ;
+        localStorage.setItem("d3",text15);
+        var text16=document.getElementById("txt16").value ;
+        localStorage.setItem("d4",text16);
+      }
+
+      </script>
+    </head>
+     <body>
+       <div class="change">
+     <h1>pizza</h1>
+     <form action="pizza.html">
+      Ingredients:<input type="text" placeholder="peproonii pizza Ingredients" class="input_box" id='txt1' > <br>
+      Ingredients:<input type="text" placeholder="salami-sandwich Ingredients" class="input_box" id='txt2' > <br>
+      Ingredients:<input type="text" placeholder="beef pizza Ingredients" class="input_box" id='txt3' > <br>
+      Ingredients:<input type="text" placeholder="cheese pizza Ingredients" class="input_box" id='txt4' > <br>
+      <input type="submit" onclick=changepizza()  class="button">
+    </form>
+    </div>
+    <div class="change">
+    <h1> sandwich </h1>
+    <form action="sandwich.html">
+      Ingredients:<input type="text" placeholder="chicken-burger Ingredients" class="input_box" id='txt5' > <br>
+      Ingredients:<input type="text" placeholder="baguette-sandwich Ingredients" class="input_box" id='txt6' > <br>
+      Ingredients:<input type="text" placeholder="sandwich-meat Ingredients" class="input_box" id='txt7' > <br>
+      Ingredients:<input type="text" placeholder="salami-sandwich Ingredients" class="input_box" id='txt8' > <br>
+      <input type="submit" onclick=changesandwich()  class="button">
+    </form>
+    </div>
+
+  <div class="change">
+    <h1> chicken </h1>
+    <form action="chicken.html">
+      Ingredients:<input type="text" placeholder="whole-grilled-chicken Ingredients" class="input_box" id='txt9' > <br>
+      Ingredients:<input type="text" placeholder="grilled-chicken Ingredients" class="input_box" id='txt10' > <br>
+      Ingredients:<input type="text" placeholder="crispy-fried-chicken Ingredients" class="input_box" id='txt11' > <br>
+      Ingredients:<input type="text" placeholder="spicy-fried-chicken-wings Ingredients" class="input_box" id='txt12' > <br>
+      <input type="submit" onclick=changechicken()  class="button">
+    </form>
+    </div>
+
+    <div class="change">
+      <h1> dessert </h1>
+    <form action="dessert.html">
+      Ingredients:<input type="text" placeholder="cheese-cake Ingredients" class="input_box" id='txt13' > <br>
+      Ingredients:<input type="text" placeholder="cheese-cake-slice Ingredients" class="input_box" id='txt14' > <br>
+      Ingredients:<input type="text" placeholder="chocolate-cake Ingredients" class="input_box" id='txt15' > <br>
+      Ingredients:<input type="text" placeholder="stack-chocolate-brownies Ingredients" class="input_box" id='txt16' > <br>
+      <input type="submit" onclick=changedessert() class="button">
+    </form>
+    </div>
+
+
+      </body>
+</html>
